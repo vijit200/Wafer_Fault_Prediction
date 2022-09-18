@@ -237,3 +237,42 @@
 2022-09-18/21:12:33: Entered the load_model method of the File_Operation class
 2022-09-18/21:12:33: Model File RandomForest1 loaded. Exited the load_model method of the Model_Finder class
 2022-09-18/21:12:33: End of Prediction
+2022-09-18/21:16:56: Start of Validation on files for prediction!!
+2022-09-18/21:17:01: Raw Data Validation Complete!!
+2022-09-18/21:17:01: Starting Data Transforamtion!!
+2022-09-18/21:17:03: DataTransformation Completed!!!
+2022-09-18/21:17:03: Creating Prediction_Database and tables on the basis of given schema!!!
+2022-09-18/21:17:06: Table creation Completed!!
+2022-09-18/21:17:06: Insertion of Data into Table started!!!!
+2022-09-18/21:17:10: Insertion in Table completed!!!
+2022-09-18/21:17:10: Deleting Good Data Folder!!!
+2022-09-18/21:17:10: Good_Data folder deleted!!!
+2022-09-18/21:17:10: Moving bad files to Archive and deleting Bad_Data folder!!!
+2022-09-18/21:17:10: Bad files moved to archive!! Bad folder Deleted!!
+2022-09-18/21:17:10: Validation Operation completed!!
+2022-09-18/21:17:10: Extracting csv file from table
+2022-09-18/21:17:11: Start of Prediction
+2022-09-18/21:17:11: Entered the get_data method of the Data_Getter class
+2022-09-18/21:17:11: Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-09-18/21:17:11: No we going to check is null present or not
+2022-09-18/21:17:11: Now we filling nan with any valuable value using KNNImputer
+2022-09-18/21:17:11: Nan value handel successfully!!...
+2022-09-18/21:17:11: Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-09-18/21:17:12: Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-09-18/21:17:12: This will remove the unwanted columns!!..
+2022-09-18/21:17:12: Columns Droped successfully!!...
+2022-09-18/21:17:12: Entered the load_model method of the File_Operation class
+2022-09-18/21:17:12: Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2022-09-18/21:17:13: Entered the find_correct_model_file method of the File_Operation class
+2022-09-18/21:17:13: Exited the find_correct_model_file method of the Model_Finder class.
+2022-09-18/21:17:13: Entered the load_model method of the File_Operation class
+2022-09-18/21:17:13: Model File XGBoost0 loaded. Exited the load_model method of the Model_Finder class
+2022-09-18/21:17:14: Entered the find_correct_model_file method of the File_Operation class
+2022-09-18/21:17:14: Exited the find_correct_model_file method of the Model_Finder class.
+2022-09-18/21:17:14: Entered the load_model method of the File_Operation class
+2022-09-18/21:17:14: Model File RandomForest2 loaded. Exited the load_model method of the Model_Finder class
+2022-09-18/21:17:15: Entered the find_correct_model_file method of the File_Operation class
+2022-09-18/21:17:15: Exited the find_correct_model_file method of the Model_Finder class.
+2022-09-18/21:17:15: Entered the load_model method of the File_Operation class
+2022-09-18/21:17:15: Model File RandomForest1 loaded. Exited the load_model method of the Model_Finder class
+2022-09-18/21:17:15: End of Prediction

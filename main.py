@@ -13,18 +13,22 @@ def home():
 @app.route('/predict',methods = ['POST'])
 
 def predict():
-    if request.method == 'POST':
-         path = str(request.form['folder_path'])
+    try:
+        if request.method == 'POST':
+            path = str(request.form['folder_path'])
 
-         data = pred_validation(path)
+            data = pred_validation(path)
 
-         data.prediction_validation()
+            data.prediction_validation()
 
-         tr = prediction(path)
-         tr.predictionFromModel()
+            tr = prediction(path)
+            tr.predictionFromModel()
 
 
-         return render_template('index.html',predict_wafer = "Prediction file created !...")
+            return render_template('index.html',predict_wafer = "Prediction file created !...")
+    except Exception as e:
+
+        return render_template('index.html',predict_wafer = e)
 
 if __name__ == '__main__':
     app.run(debug=True)
