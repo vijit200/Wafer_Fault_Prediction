@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wafer Precdiction</title>
+</head>
+<body>
+    <div style="color: rgb(25, 25, 172);">
+        <section>
+            <h1><b> Wafer Prediction</b></h1>
+            <form action="{{ url_for('predict')}}" method="POST">
+                <br><input type="text" name="folder_path" id="pt" size="80px">
+                <br>
+                <br>
+                <button type="submit" id="sub">
+                    <b>Predict Wafer</b>
+                </button>
+
+            </form>
+
+            <br><br>
+            <b>
+                <u>
+                    <i>
+                        Prediction
+                    </i>
+                </u>
+            </b>
+            <b>:</b>
+            <b>{{predict_wafer}}</b>
+        </section>
+    </div>
+    <br><br><a href="https://github.com/vijit200/Wafer_Fault_Prediction">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="80px" alt="github">
+    </a>
+    <a href="https://www.linkedin.com/in/vijit-kumar-620101192/">
+        <img src="data:image/png;base64,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" width="120px" alt="linkdin">
+    </a>
+    <br>
+    <br>
+    <i>Made by Vijit</i>
+</body>
+</html>
